@@ -29,7 +29,7 @@ const Banner = () => {
 						</p>
 						<div className="flex gap-4 items-center">
 							<button className="btn px-4 py-3.75 font-bold text-normal text-white rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] hover:bg-linear-to-r hover:from-[#9514FA] hover:to-[#4F39F6] transition duration-300 ease-in-out">
-								Get Started
+								Explore Products
 							</button>
 							<div className="w-40 h-10 p-px font-bold text-normal rounded-full text-[#101727] bg-linear-to-r from-[#4F39F6] to-[#9514FA] cursor-pointer">
 								<div className="w-full h-full bg-white rounded-full">
