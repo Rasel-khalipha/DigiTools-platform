@@ -1,0 +1,84 @@
+[
+	{
+		"id": 1,
+		"name": "Starter Resume Builder",
+		"description": "Create simple and professional resumes with easy-to-use templates.",
+		"price": 5,
+		"period": "one-time",
+		"tag": "new",
+		"tagType": "new",
+		"features": ["10+ templates", "Basic customization", "Export to PDF"],
+		"icon": "https://cdn-icons-png.flaticon.com/512/942/942748.png"
+	},
+	{
+		"id": 2,
+		"name": "Pro Resume Kit",
+		"description": "Advanced resume builder with ATS-friendly optimization tools.",
+		"price": 19,
+		"period": "monthly",
+		"tag": "popular",
+		"tagType": "popular",
+		"features": ["100+ templates", "ATS optimization", "Export to PDF & Word"],
+		"icon": "https://i.ibb.co.com/7NyxDkGb/portfolio.png"
+	},
+	{
+		"id": 3,
+		"name": "Career Booster Pack",
+		"description": "All-in-one package including resume, cover letter, and portfolio builder.",
+		"price": 49,
+		"period": "one-time",
+		"tag": "best seller",
+		"tagType": "best seller",
+		"features": [
+			"Resume + Cover Letter builder",
+			"Portfolio website",
+			"Custom branding"
+		],
+		"icon": "https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+	},
+	{
+		"id": 4,
+		"name": "Premium Job Suite",
+		"description": "Full-featured job application toolkit with tracking and analytics.",
+		"price": 9,
+		"period": "monthly",
+		"tag": "popular",
+		"tagType": "popular",
+		"features": [
+			"Job application tracker",
+			"Analytics dashboard",
+			"Email alerts"
+		],
+		"icon": "https://cdn-icons-png.flaticon.com/512/3076/3076304.png"
+	},
+	{
+		"id": 5,
+		"name": "Enterprise Hiring Toolkit",
+		"description": "Designed for teams to manage hiring and applicant workflows.",
+		"price": 99,
+		"period": "yearly",
+		"tag": "new",
+		"tagType": "new",
+		"features": [
+			"Team collaboration",
+			"Applicant tracking system",
+			"Bulk resume parsing"
+		],
+		"icon": "https://i.ibb.co.com/KxgmPT1R/operation.png"
+	},
+	{
+		"id": 6,
+		"name": "Ultimate Career Plan",
+		"description": "Complete career growth platform with AI-powered recommendations.",
+		"price": 79,
+		"period": "yearly",
+		"tag": "best seller",
+		"tagType": "best seller",
+		"features": [
+			"AI career suggestions",
+			"Interview preparation",
+			"Skill assessment tools"
+		],
+		"icon": "https://cdn-icons-png.flaticon.com/512/4712/4712027.png"
+	}
+]
