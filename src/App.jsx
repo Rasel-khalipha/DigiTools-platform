@@ -7,6 +7,7 @@ import Static from "./components/static/Static";
 import Steps from "./components/steps/Steps";
 import Pricing from "./components/pricing/Pricing";
 import CallToAction from "./components/callToAction/CallToAction";
+import Footer from "./components/footer/Footer";
 
 const getProducts = async () => {
 	const res = await fetch("/products.json");
@@ -42,6 +43,7 @@ function App() {
 			<Steps />
 			<Pricing />
 			<CallToAction />
+			<Footer />
 		</>
 	);
 }
