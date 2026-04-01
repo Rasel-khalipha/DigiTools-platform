@@ -11,7 +11,7 @@ const ProductCard = ({
 	const [buy, setBuy] = useState(false);
 
 	const handleBuyBtn = () => {
-		toast.success(`You have added ${product.name} to your cart!`);
+		toast.success("Product added to your cart!");
 		setBuy(true);
 		if (!selectedProducts.includes(product)) {
 			setSelectedProducts([...selectedProducts, product]);
