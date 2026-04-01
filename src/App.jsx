@@ -4,6 +4,8 @@ import Banner from "./components/banner/Banner";
 import Navbar from "./components/navbar/Navbar";
 import Products from "./components/products/Products";
 import Static from "./components/static/Static";
+import Steps from "./components/steps/Steps";
+import Pricing from "./components/pricing/Pricing";
 
 const getProducts = async () => {
 	const res = await fetch("/products.json");
@@ -35,6 +37,9 @@ function App() {
 					setSelectedButton={setSelectedButton}
 				/>
 			</Suspense>
+
+			<Steps />
+			<Pricing />
 		</>
 	);
 }

@@ -5,7 +5,7 @@ const Navbar = ({ selectedProducts, setSelectedButton }) => {
 	return (
 		<>
 			<div className="border-b border-[#f2f2f2]">
-				<div className="navbar max-w-300 mx-auto px-0 py-6.5">
+				<div className="navbar w-dvw lg:max-w-300 mx-auto px-0 py-6.5">
 					<div className="navbar-start">
 						<div className="dropdown">
 							<div
@@ -51,7 +51,7 @@ const Navbar = ({ selectedProducts, setSelectedButton }) => {
 							</ul>
 						</div>
 						<a className="">
-							<h2 className="font-black text-4xl bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent leading-normal">
+							<h2 className="font-black text-lg md:text-4xl bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent leading-normal">
 								DigiTools
 							</h2>
 						</a>
@@ -76,7 +76,10 @@ const Navbar = ({ selectedProducts, setSelectedButton }) => {
 						</ul>
 					</div>
 					<div className="navbar-end gap-4">
-						<div className="relative cursor-pointer" onClick={() => setSelectedButton("cart")}>
+						<div
+							className="relative cursor-pointer"
+							onClick={() => setSelectedButton("cart")}
+						>
 							<FiShoppingCart className="text-[#101727]" />
 							<span className="badge badge-secondary badge-xs absolute -top-2 -right-3">
 								{selectedProducts.length}
