@@ -14,8 +14,8 @@ const Products = ({
 	return (
 		<>
 			<div className="max-w-300 mx-auto px-0 py-30">
-				<div className="text-center w-135 mx-auto mb-10">
-					<h2 className="font-extrabold text-5xl text-[#101727] mb-4">
+				<div className="text-center mb-10">
+					<h2 className="font-extrabold text-3xl lg:text-5xl text-[#101727] mb-4">
 						Premium Digital Tools
 					</h2>
 					<p className="font-normal text-base text-[#627382] mb-4">

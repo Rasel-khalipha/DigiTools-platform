@@ -8,7 +8,7 @@ const Footer = () => {
 	return (
 		<>
 			<div className="bg-[#101727] pt-30 pb-20">
-				<footer className="footer sm:footer-horizontal p-10 max-w-300 mx-auto px-0">
+				<footer className="footer sm:footer-horizontal p-10 max-w-300 mx-auto px-5 md:px-0">
 					<aside>
 						<img src={digiToolFooterLogo} alt="DigiTool Footer Logo" />
 						<p className="font-normal text-base text-white/80 mt-4">
@@ -76,11 +76,11 @@ const Footer = () => {
 					</nav>
 				</footer>
 				<hr className="border-[#333333] max-w-300 mx-auto mt-10" />
-				<div className="max-w-300 mx-auto px-0 flex justify-between items-center mt-7.5">
+				<div className="max-w-300 mx-auto px-0 flex flex-col md:flex-row space-y-5 md:space-y-0 justify-between items-center mt-7.5">
 					<p className="text-center text-[#fafafa]/50">
 						&copy; 2024 DigiTools. All rights reserved.
 					</p>
-					<ul className="flex gap-7.5">
+					<ul className="flex flex-col md:flex-row gap-7.5">
 						<li>
 							<a href="" className="text-[#fafafa]/50">
 								Privacy Policy

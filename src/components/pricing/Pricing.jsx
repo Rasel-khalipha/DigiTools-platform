@@ -15,7 +15,7 @@ const Pricing = () => {
 							anytime.
 						</p>
 					</div>
-					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 justify-items-center md:justify-items-start">
 						<div className="w-95 border-2 border-[#f1f1f1] rounded-2xl p-6 h-125">
 							<h3 className="font-bold text-2xl text-[#101727] mb-2">
 								Starter

@@ -20,7 +20,7 @@ const ProductCard = ({
 
 	return (
 		<>
-			<div>
+			<div className="">
 				<div className="border-2 border-[#f2f2f2] p-6 rounded-2xl space-y-4 relative">
 					<button
 						className={`absolute top-2.5 right-2.5 px-3 py-1.5 rounded-full font-medium text-sm ${tagStyles[product.tagType] ? tagStyles[product.tagType].bg : tagStyles.default.bg}`}

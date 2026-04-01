@@ -5,7 +5,7 @@ const Navbar = ({ selectedProducts, setSelectedButton }) => {
 	return (
 		<>
 			<div className="border-b border-[#f2f2f2]">
-				<div className="navbar w-dvw lg:max-w-300 mx-auto px-0 py-6.5">
+				<div className="navbar w-90 sm:w-150 lg:w-300 mx-auto px-0 py-6.5">
 					<div className="navbar-start">
 						<div className="dropdown">
 							<div

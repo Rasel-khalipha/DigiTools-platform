@@ -16,7 +16,7 @@ const Steps = () => {
 							Start using premium digital tools in minutes, not hours.
 						</p>
 
-						<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+						<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 justify-items-center md:justify-items-start">
 							<div className="w-95 border-2 border-[#f1f1f1] rounded-2xl p-6 relative">
 								<span className=" w-10 h-10 rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white inline-flex items-center justify-center font-bold text-sm absolute top-5 right-5">
 									01

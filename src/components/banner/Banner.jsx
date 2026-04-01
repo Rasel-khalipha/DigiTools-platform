@@ -7,7 +7,7 @@ const Banner = () => {
 		<>
 			<div className="hero min-h-screen px-0 max-w-300 mx-auto py-21.25">
 				<div className="hero-content flex-col lg:flex-row-reverse px-0 gap-15">
-					<img src={bannerImg} className="max-w-lg rounded-lg" />
+					<img src={bannerImg} className="max-w-xs sm:max-w-lg rounded-lg" />
 					<div className="text-center lg:text-left mx-auto">
 						<button className="btn bg-[#E1E7FF] rounded-full mb-4">
 							<div className="w-4 h-4 bg-linear-to-r from-[#4F39F6]/15 to-[#9514FA]/15 rounded-full flex items-center justify-center">
@@ -19,10 +19,10 @@ const Banner = () => {
 								New: AI-Powered Tools Available
 							</span>
 						</button>
-						<h1 className="text-4xl lg:text-[4.5rem] font-extrabold leading-21 text-center lg:text-left text-[#101727]">
+						<h1 className="text-3xl lg:text-[4.5rem] font-extrabold leading-21 text-center lg:text-left text-[#101727]">
 							Supercharge Your Digital Workflow
 						</h1>
-						<p className="py-6 font-normal text-lg text-[#627382] w-120 lg:w-141 mt-4 mb-8 text-center lg:text-left mx-auto">
+						<p className="py-6 font-normal text-sm md:text-lg text-[#627382] w-90 lg:w-141 mt-4 mb-8 text-center lg:text-left mx-auto lg:mx-0">
 							Access premium AI tools, design assets, templates, and
 							productivity software—all in one place. Start creating faster
 							today. Explore Products

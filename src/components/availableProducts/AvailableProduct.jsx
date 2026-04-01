@@ -1,7 +1,11 @@
 import React from "react";
 import ProductCard from "../ui/productCard/ProductCard";
 
-const AvailableProduct = ({ products, selectedProducts, setSelectedProducts }) => {
+const AvailableProduct = ({
+	products,
+	selectedProducts,
+	setSelectedProducts,
+}) => {
 	const tagStyles = {
 		new: {
 			bg: "bg-[#DBFCE7]",
@@ -23,10 +27,15 @@ const AvailableProduct = ({ products, selectedProducts, setSelectedProducts }) =
 	return (
 		<>
 			<div>
-				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7.5">
+				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7.5 px-5 lg:px-0">
 					{products.map((product) => (
 						<div key={product.id}>
-							<ProductCard product={product} tagStyles={tagStyles} selectedProducts={selectedProducts} setSelectedProducts={setSelectedProducts} />
+							<ProductCard
+								product={product}
+								tagStyles={tagStyles}
+								selectedProducts={selectedProducts}
+								setSelectedProducts={setSelectedProducts}
+							/>
 						</div>
 					))}
 				</div>
