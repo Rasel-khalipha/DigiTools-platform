@@ -1,11 +1,21 @@
 import React, { useState } from "react";
 import { IoMdCheckmark } from "react-icons/io";
+import { toast } from "react-toastify";
 
-const ProductCard = ({ product, tagStyles }) => {
+const ProductCard = ({
+	product,
+	tagStyles,
+	selectedProducts,
+	setSelectedProducts,
+}) => {
 	const [buy, setBuy] = useState(false);
 
-	const handleBuy = () => {
+	const handleBuyBtn = () => {
+		toast.success(`You have added ${product.name} to your cart!`);
 		setBuy(true);
+		if (!selectedProducts.includes(product)) {
+			setSelectedProducts([...selectedProducts, product]);
+		}
 	};
 
 	return (
@@ -47,9 +57,9 @@ const ProductCard = ({ product, tagStyles }) => {
 						))}
 					</ul>
 					<button
-						onClick={handleBuy}
+						onClick={handleBuyBtn}
 						disabled={buy}
-						className="w-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] px-6 py-3.5 rounded-full text-white font-bold text-base cursor-pointer text-center"
+						className={`w-full ${buy ? "bg-linear-to-r from-[#4F39F6]/30 to-[#9514FA]/30" : "bg-linear-to-r from-[#4F39F6] to-[#9514FA] hover:bg-linear-to-r hover:from-[#9514FA] hover:to-[#4F39F6] transition duration-500"}  px-6 py-3.5 rounded-full text-white font-bold text-base cursor-pointer text-center`}
 					>
 						{buy ? "Added to Cart" : "Buy Now"}
 					</button>

@@ -1,4 +1,4 @@
-import { Suspense } from "react";
+import { Suspense, useState } from "react";
 import "./App.css";
 import Banner from "./components/banner/Banner";
 import Navbar from "./components/navbar/Navbar";
@@ -13,15 +13,26 @@ const getProducts = async () => {
 
 function App() {
 	const productsPromise = getProducts();
+	const [selectedProducts, setSelectedProducts] = useState([]);
+	const [selectedButton, setSelectedButton] = useState("products");
 	return (
 		<>
-			<Navbar />
+			<Navbar
+				selectedProducts={selectedProducts}
+				setSelectedButton={setSelectedButton}
+			/>
 			<Banner />
 			<Static />
 			<Suspense
 				fallback={<span className="loading loading-infinity loading-xl"></span>}
 			>
-				<Products productsPromise={productsPromise} />
+				<Products
+					productsPromise={productsPromise}
+					selectedProducts={selectedProducts}
+					setSelectedProducts={setSelectedProducts}
+					selectedButton={selectedButton}
+					setSelectedButton={setSelectedButton}
+				/>
 			</Suspense>
 		</>
 	);
