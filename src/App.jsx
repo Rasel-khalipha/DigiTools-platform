@@ -21,6 +21,7 @@ function App() {
 				selectedProducts={selectedProducts}
 				setSelectedButton={setSelectedButton}
 			/>
+
 			<Banner />
 			<Static />
 			<Suspense
